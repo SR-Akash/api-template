@@ -1,0 +1,339 @@
+.print-page-main-body .clearfix {
+    padding: 20px;
+    padding-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+}
+
+.print-page-main-body {
+    min-height: 960px;
+    position: relative;
+}
+
+    .print-page-main-body .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+
+    .print-page-main-body .company-info {
+        float: left;
+        width: 70% !important;
+    }
+
+    .print-page-main-body .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .print-page-main-body .company-info .companyName .companyImg {
+        /* border       : 1px solid red; */
+        padding-top: 10px;
+        border-radius: 50%;
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+
+
+    .print-page-main-body .company-social-info {
+        float: right;
+    }
+
+        .print-page-main-body .company-social-info p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            /*line-height: 12px;*/
+            text-align: right;
+            margin-top: 4px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+    .print-page-main-body .company-info .companyTitle {
+        float: left;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        /*line-height: 14px;*/
+        margin-left: 10px;
+        color: rgba(0, 0, 0, 0.7);
+        align-items: center;
+        vertical-align: middle;
+        width: 70% !important;
+    }
+
+    .print-page-main-body .company-info .companyImg {
+        float: left;
+    }
+
+    .print-page-main-body .company-info .companyAddress {
+        float: left;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        align-items: center;
+        vertical-align : central;
+        /*line-height: 14px;*/
+        /* or 140% */
+        width: 50vw;
+        /* border     : 1px solid black; */
+        margin-bottom: 16px;
+        margin-top : 0px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+table.footer_table {
+    width: 100%;
+    border-collapse: separate;
+    border: none;
+    border-spacing: 30px !important;
+}
+
+
+
+.footer_table tbody tr td {
+    border-left: 1px solid white !important;
+    border-right: 1px solid white !important;
+    border-bottom: 1px solid white !important;
+    border-top: 1px solid grey !important;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    /*line-height: 12px;*/
+    /* identical to box height */
+
+    margin: 4px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+    .footer_table tbody tr td.authorName {
+        width: 33%;
+    }
+
+.print-page-main-body .footer {
+    position: absolute;
+    /* height                   : 50px; */
+    /* padding-top              : 100px; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    .print-page-main-body .footer.dbl_page {
+        position: relative !important;
+        /* height                   : 50px; */
+        padding-top: 100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 11px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* .print-page-main-body .footer .signDiv {
+  float: left;
+} */
+    .print-page-main-body .footer .footerDiv {
+        /* position: ; */
+    }
+
+    .print-page-main-body .footer .signerDiv {
+        width: 80vw;
+        border: 1px solid red;
+    }
+
+    .print-page-main-body .footer .signDiv {
+        float: left;
+        width: 32%;
+        padding-right: 17px;
+        margin-bottom: 20px;
+    }
+
+        .print-page-main-body .footer .signDiv .signImg {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
+
+        .print-page-main-body .footer .signDiv .signAuthor {
+            font-weight: normal;
+            font-size: 10px;
+            /*line-height: 12px;*/
+            /* identical to box height */
+
+            margin-top: 4px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+    .print-page-main-body .footer .footerNote {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        /*line-height: 16px;*/
+        /* identical to box height, or 160% */
+        float: left;
+        margin-top: 20px;
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+.print-page-main-body .main-report-body .body_main_table .table_header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    /*line-height: 12px;*/
+    margin: 0px 0 20px 0;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.body_main_table table,
+.body_main_table table td,
+.body_main_table th {
+    border: 1px solid black;
+}
+
+.body_main_table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.big_td {
+    width: 108px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* __________________________Main-Body_______________________________ */
+.print-page-main-body .main-report-body .body-header {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.print-page-main-body .main-report-body .employee_personal_info {
+    width: 65%;
+    float: left;
+}
+
+.print-page-main-body .main-report-body .body-header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.print-page-main-body .main-report-body .employee_personal_info .emp_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    /*line-height: 12px;*/
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.print-page-main-body .main-report-body .employee_personal_info .emp_designation {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    /*line-height: 12px;*/
+    /* identical to box height */
+    margin: 0;
+    margin-top: 2px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.print-page-main-body .main-report-body .emp_other_info {
+    /* float: left; */
+}
+
+    .print-page-main-body .main-report-body .emp_other_info table tbody tr td:first-child,
+    .print-page-main-body .main-report-body .employee_personal_info table tbody tr td:first-child {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        /*line-height: 12px;*/
+        /* identical to box height */
+
+
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+    .print-page-main-body .main-report-body .emp_other_info table tbody tr td:last-child,
+    .print-page-main-body .main-report-body .employee_personal_info table tbody tr td:last-child {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        /*line-height: 12px;*/
+        padding-left: 20px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+.print-page-main-body .main-report-body .body_main_table {
+    padding: 20px;
+}
+
+
+
+    .print-page-main-body .main-report-body .body_main_table .table table {
+        width: 100% !important;
+    }
+
+        .print-page-main-body .main-report-body .body_main_table .table table thead tr {
+            background: #E5F0FC;
+        }
+
+@media print {
+    .print-page-main-body .main-report-body .body_main_table .table table thead tr {
+        /* background                : #E5F0FC; */
+        -webkit-print-color-adjust: exact !important;
+    }
+}
+
+.print-page-main-body .main-report-body .body_main_table .table table thead tr th {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    /*line-height: 11px;*/
+    padding: 5px;
+    height: 20px;
+    /* identical to box height */
+    border: none;
+    padding: 5px;
+    letter-spacing: 0.2px;
+    color: black;
+    border: 1px solid black;
+    padding: 12px !important;
+}
+
+.print-page-main-body .main-report-body .body_main_table .table table tbody tr td {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    /*line-height: 12px;*/
+    /* identical to box height */
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 0.2px;
+    padding: 12px !important;
+    color: rgba(0, 0, 0, 0.7);
+}

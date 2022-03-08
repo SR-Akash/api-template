@@ -1,0 +1,7 @@
+version: '3'
+services: 
+  vat:
+    build:
+      context: . 
+      dockerfile: VATManagemant/Dockerfile
+    image: "iboslimitedbd/vat:${tag}"

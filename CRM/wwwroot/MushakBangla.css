@@ -1,0 +1,229 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100;200;300;400;500;600&display=swap');
+/* Global Class */
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.bold {
+  font-weight: 500;
+}
+strong {
+  font-weight: 500;
+}
+/* padding class */
+.pt-1 {
+  padding-top: 0.3rem;
+}
+.pt-2 {
+  padding-top: 0.9rem;
+}
+.pt-3 {
+  padding-top: 1.5rem;
+}
+.pt-4 {
+  padding-top: 2.1rem;
+}
+.pt-5 {
+  padding-top: 2.7rem !important;
+}
+
+/* Reset Default Css */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 9pt;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  padding-top: 0;
+}
+p {
+  padding-bottom: 3px;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  /* text-align: justify; */
+}
+.page::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+table {
+  -fs-table-paginate: paginate;
+}
+
+tr {
+  page-break-inside: avoid;
+}
+/* Main Body Css */
+.headline {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  font-weight: 600;
+  border: 3px solid;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* Header */
+.page .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.page .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 150px;
+  max-height: 150px;
+}
+.page .header-content .govt-info {
+}
+.page .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.page .header-content p {
+  padding-bottom: 2px;
+}
+.page .header-content .title {
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+.page .header-content .add {
+  font-size: 12px;
+}
+.page .header-content .text {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.page .header-content .date {
+  font-size: 12px;
+}
+.header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* table-main-header */
+.table-main-header {
+  padding-bottom: 25px;
+}
+/* Main & Table  */
+.main {
+  margin-top: 20px;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  /* table-layout: fixed;  */
+  margin-bottom: 10px;
+}
+.table th,
+.table td {
+  border: 1px solid;
+  padding: 2px 4px;
+  font-size: 8pt;
+}
+/* .table tr:first-child {
+  background: #f5f7f9;
+} */
+.table th {
+  background: #f6f7f9;
+  /* font-size: 10px; */
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+}
+.table td {
+  /* font-size: 10px; */
+  letter-spacing: 0.1px;
+  word-wrap: break-word;
+}
+/* Table Footer */
+.table-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.table-footer .right {
+  min-width: 185px;
+  padding-left: 15px;
+}
+.table-footer .right table tr td:last-child {
+  padding-left: 20px;
+}
+/* Footer */
+.footer {
+  /* width: 100%; */
+  /* position: absolute; */
+  bottom: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer .print-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.footer .print-details p:first-child {
+  padding-right: 10px;
+}

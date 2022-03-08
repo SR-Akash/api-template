@@ -1,0 +1,50 @@
+resources:
+- repo: self
+queue:
+  name: AndroidAgent
+#Your build pipeline references an undefined variable named ‘docker images --filter "dangling=true" -q --no-trunc’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+steps:
+- task: DockerCompose@0
+  displayName: 'Build Service'
+  inputs:
+    containerregistrytype: 'Container Registry'
+
+    dockerRegistryEndpoint: DockerHub
+
+    dockerComposeFile: 'docker-compose.yml'
+
+    dockerComposeFileArgs: 'tag=$(Build.BuildId)'
+
+    action: 'Build services'
+
+
+- task: DockerCompose@0
+  displayName: Push
+  inputs:
+    containerregistrytype: 'Container Registry'
+
+    dockerRegistryEndpoint: DockerHub
+
+    dockerComposeFile: 'docker-compose.yml'
+
+    dockerComposeFileArgs: 'tag=$(Build.BuildId)'
+
+    action: 'Push services'
+
+
+- script: 'docker rmi $(docker images --filter "dangling=true" -q --no-trunc) -f'
+  displayName: 'Command Line Script'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    Contents: 'Relese-ddd-pipeline.yml'
+
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+
+
+

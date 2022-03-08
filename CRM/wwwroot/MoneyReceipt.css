@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Global Class */
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+strong {
+  font-weight: 500;
+}
+/* Reset Default Css */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffff;
+  font-size: 9pt;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  padding-top: 0;
+}
+p {
+  padding-bottom: 3px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+/* A4 Paper Layout  */
+.page::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+table {
+  -fs-table-paginate: paginate;
+}
+@page {
+  size: A4;
+  margin: 0 !important;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  table-layout: fixed;
+}
+
+@media print {
+  table {
+    -fs-table-paginate: paginate;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+  .page {
+    margin: 0 !important;
+    padding: 2 !important;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    -webkit-box-shadow: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: avoid;
+    position: relative;
+    overflow: auto;
+  }
+  tr {
+    page-break-inside: avoid;
+  }
+}
+
+/* Main Body Css */
+/* Header */
+.page .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.page .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100px;
+  max-height: 100px;
+}
+.page .logo img {
+    max-width: 100px !important;
+    max-height: 100px !important;
+}
+.page .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.page .header-content p {
+  padding-bottom: 2px;
+}
+.page .header-content .title {
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+.page .header-content .add {
+  font-size: 12px;
+}
+.page .header-content .text {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.page .header-content .date {
+  font-size: 12px;
+}
+.header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* table-main-header */
+.table-main-header {
+  padding-bottom: 25px;
+}
+/* Main & Table  */
+.main {
+  margin-top: 20px;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  /* table-layout: fixed;  */
+  margin-bottom: 10px;
+}
+.table .border-bottom{
+  border-bottom: 1px solid black;
+  width: 100px;
+}
+.table-footer .right .signature-border{
+  margin-bottom: 1px solid black; 
+  width: 200px;
+}
+
+.table th,
+.table td {
+  padding: 2px 4px;
+}
+/* .table tr:first-child {
+  background: #f6f7f9;
+} */
+.table th {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+ 
+}
+.table td {
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  word-wrap: break-word;
+}
+/* Table Footer */
+.table-footer {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.table-footer .right {
+  min-width: 185px;
+  padding-left: 15px;
+}
+.table-footer .right table tr td:last-child {
+  padding-left: 20px;
+}
+/* Footer */
+.footer {
+  /* width: 100%; */
+  /* position: absolute; */
+  bottom: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer .print-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.footer .print-details p:first-child {
+  padding-right: 10px;
+}

@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: #{Deployment}#
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app:   #{Deployment}#
+  template:
+    metadata:
+      labels:
+        app:  #{Deployment}#
+        type:  #{Deployment}#
+    spec:
+      containers:
+      - name:  #{Deployment}#
+        image: iboslimitedbd/#{Deployment}#:#{Build.BuildId}#
+        # Environment variable section
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "64Mi"
+          limits:
+            cpu: "1000m"
+            memory: "4Gi"         
+        env:
+        - name: #{AppEnvName}#
+          value: #{AppEnvValue}#
+        - name:  "ConnectionString"
+          value:  #{ConnectionString}#
+        - name: "REACT_APP_KEY_NAME"
+          value: #{REACT_APP_KEY_NAME}#
+        - name:  "REACT_APP_IV_NAME"
+          value:  #{REACT_APP_IV_NAME}#
+        - name:  "REACT_APP_SECRET_NAME"
+          value:  #{REACT_APP_SECRET_NAME}#
+      imagePullSecrets:
+      - name: dockercred
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: #{Deployment}#
+spec:
+  selector:
+    app: #{Deployment}#
+  ports:
+  - port: 80
+    # targetPort: 80 
+  # type: LoadBalancer
+  # loadBalancerIP: 10.17.217.194
+
+  #Ingress SSL with custom path Configurations
+
+
+          

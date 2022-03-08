@@ -1,1 +1,2 @@
-# api-template
+# SME-API
+SME-API
